@@ -1,0 +1,62 @@
+.offers {
+    width: 65%;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    padding: 0px 50px; /* Reduce padding for better centering */
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 50%);
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 50px; /* Reduce font size for better alignment */
+    font-weight: 600;
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 20px; /* Slightly smaller text */
+    font-weight: 600;
+    margin-bottom: 20px; /* Add space below paragraph */
+}
+
+.offers-left button {
+    width: 250px; /* Slightly smaller button */
+    height: 60px;
+    border-radius: 30px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    padding: 0; /* Remove padding for better centering */
+}
+
+.offers-right img {
+    max-width: 65%; /* Make image smaller */
+    max-height: 80%; /* Reduce image height */
+    object-fit: contain; /* Ensure the image maintains aspect ratio */
+}

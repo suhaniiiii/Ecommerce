@@ -1,0 +1,125 @@
+/* Container for hero section */
+.hero {
+    height: calc(100vh - 80px); /* Adjust height based on navbar height (80px) */
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+    padding: 0; /* Remove extra padding */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width/height calculation */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Left side content styling */
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical centering */
+    align-items: center; /* Horizontal centering */
+    /* gap: 1px; Space between elements */
+    text-align: center; /* Center text */
+    padding: 0 20px; /* Add horizontal padding for spacing */
+    box-sizing: border-box; /* Ensure proper layout sizing */
+}
+
+/* Styling for h2 tag */
+.hero-left h2 {
+    color: #090909;
+    font-size: 24px; /* Adjust font size for visibility */
+    font-weight: 600;
+    margin: 0; /* Remove default margin */
+    padding-top: 30px; /* Prevent overlap with navbar */
+    z-index: 1; /* Ensure it stays on top */
+}
+
+/* Hand icon section styling */
+.hero-hand-icon {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Center the content horizontally */
+    font-size: 10px;
+    gap: 1px; /* Space between text and icon */
+    margin-top: 10px; /* Add some space above */
+}
+
+.hero-hand-icon p {
+    color: #171717;
+    font-size: 50px; /* Adjusted font size */
+    font-weight: 700;
+    margin: 0; /* Remove margin */
+}
+
+.hero-hand-icon img {
+    width: 2px; /* Adjust icon size */
+    height: 1px;
+}
+
+/* General styling for text under hero-hand-icon */
+.hero-left p {
+    color: #171717;
+    font-size: 60px; /* Adjust font size for better centering */
+    font-weight: 700;
+    margin: 0; /* Remove default margin */
+    line-height: 1.2; /* Adjust line spacing */
+}
+
+/* Styling for latest button */
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 20px; /* Add some space between button and text */
+    background: #ff4141;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.hero-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero-right image adjustments */
+.hero-right img {
+    max-width: 70%; /* Limit width to avoid overflow */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+    object-fit: contain;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px; /* Add padding to the hero section */
+    }
+
+    .hero-left {
+        text-align: center;
+    }
+
+    .hero-left h2 {
+        font-size: 20px; /* Smaller font for h2 */
+    }
+
+    .hero-left p {
+        font-size: 40px; /* Smaller font size for other text */
+    }
+
+    .hero-latest-btn {
+        width: 200px;
+        height: 50px;
+    }
+
+    .hero-right img {
+        max-width: 90%; /* Adjust image size for smaller screens */
+    }
+}
